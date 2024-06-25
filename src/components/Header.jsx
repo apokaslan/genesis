@@ -16,7 +16,7 @@ const Header = () => {
         className="flex justify-start items-center
       text-xl text-black space-x-1"
       >
-        <span>Genesis</span>
+        <span>DeuFund</span>
         <TbBusinessplan />
       </Link>
 
@@ -24,18 +24,18 @@ const Header = () => {
         {connectedAccount ? (
           <button
             type="button"
-            className="inline-block px-6 py-2.5 bg-green-600
+            className="inline-block px-6 py-2.5 bg-blue-600
             text-white font-medium text-xs leading-tight uppercase
-            rounded-full shadow-md hover:bg-green-700"
+            rounded-full shadow-md hover:bg-blue-700"
           >
             {truncate(connectedAccount, 4, 4, 11)}
           </button>
         ) : (
           <button
             type="button"
-            className="inline-block px-6 py-2.5 bg-green-600
+            className="inline-block px-6 py-2.5 bg-blue-600
             text-white font-medium text-xs leading-tight uppercase
-            rounded-full shadow-md hover:bg-green-700"
+            rounded-full shadow-md hover:bg-blue-700"
             onClick={connectWallet}
           >
             Connect Wallet

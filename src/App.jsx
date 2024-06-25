@@ -9,10 +9,14 @@ import { ToastContainer } from 'react-toastify'
 const App = () => {
   const [loaded, setLoaded] = useState(false)
 
-  useEffect(async () => {
-    await isWallectConnected()
-    console.log('Blockchain loaded')
-    setLoaded(true)
+  useEffect(() => {
+    const fetchData = async () => {
+      await isWallectConnected()
+      console.log('Blockchain loaded')
+      setLoaded(true)
+    }
+
+    fetchData();
   }, [])
 
   return (

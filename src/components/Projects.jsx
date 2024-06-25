@@ -27,9 +27,9 @@ const Projects = ({ projects }) => {
         <div className="flex justify-center items-center my-5">
           <button
             type="button"
-            className="inline-block px-6 py-2.5 bg-green-600
+            className="inline-block px-6 py-2.5 bg-blue-600
           text-white font-medium text-xs leading-tight uppercase
-          rounded-full shadow-md hover:bg-green-700"
+          rounded-full shadow-md hover:bg-blue-700"
             onClick={() => setEnd(end + count)}
           >
             Load more
